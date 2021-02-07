@@ -1,7 +1,11 @@
 import React from "react";
 
 function Mail() {
-  return <div></div>;
+  return (
+    <div>
+      <h1>Test</h1>
+    </div>
+  );
 }
 
 export default Mail;
