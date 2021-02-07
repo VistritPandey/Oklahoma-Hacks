@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Search from "./Search";
 import SearchIcon from "@material-ui/icons/Search";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import Logo from "./Logo.png";
 
 function SearchPage() {
   const [{ term = "Apple" }, dispatch] = useStateValue();
@@ -14,11 +15,7 @@ function SearchPage() {
     <div className="searchpage">
       <div className="searchpage__header">
         <Link to="/">
-          <img
-            className="searchPage_Logo"
-            src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
-            alt=""
-          />
+          <img className="searchPage_Logo" src={Logo} alt="" />
         </Link>
         <div className="searchPage__headerbody">
           <Search hideButtons />
