@@ -4,8 +4,6 @@ import { useStateValue } from "./StateProvider";
 import useGoogleSearch from "./useGoogleSearch";
 import { Link } from "react-router-dom";
 import Search from "./Search";
-import SearchIcon from "@material-ui/icons/Search";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
 import Logo from "./Logo.png";
 
 function SearchPage() {
@@ -20,24 +18,8 @@ function SearchPage() {
         <div className="searchPage__headerbody">
           <Search hideButtons />
           <div className="searchPage__options">
-            <div className="searchPage__optionsLeft">
-              <div className="searchPage_option">
-                <SearchIcon />
-                <Link to="/all">All</Link>
-              </div>
-              <div className="searchPage_option">
-                <MoreVertIcon />
-                <Link to="/more">more</Link>
-              </div>
-            </div>
-            <div className="searchPage__optionsRight">
-              <div className="searchPage_option">
-                <Link to="/settings">Settings</Link>
-              </div>
-              <div className="searchPage_option">
-                <Link to="/tools">Tools</Link>
-              </div>
-            </div>
+            <div className="searchPage__optionsLeft"></div>
+            <div className="searchPage__optionsRight"></div>
           </div>
         </div>
       </div>

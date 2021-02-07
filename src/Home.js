@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import AppsIcon from "@material-ui/icons/Apps";
+import MailIcon from "@material-ui/icons/Mail";
 import { Avatar, IconButton } from "@material-ui/core";
 import Search from "./Search";
 import Logo from "./Logo.png";
@@ -14,9 +15,8 @@ function Home() {
       <div className="home__header">
         <div className="home__headerleft"></div>
         <div className="home__headerright">
-          <Link to="/mail">Gmail</Link>
           <IconButton href="https://socio-email.web.app/">
-            <AppsIcon />
+            <MailIcon />
           </IconButton>
           <Avatar />
         </div>
